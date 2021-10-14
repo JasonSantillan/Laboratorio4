@@ -31,15 +31,19 @@ void Bomberman::update()
 {
 	if (keyboardInput->IsKeyOn(botonAbajo)) {
 		direccionSiguiente = MOVE_DIRECTION_ABAJO;
+		pilaMoveDirection.Insertar(MOVE_DIRECTION_ABAJO);
 	}
 	else if (keyboardInput->IsKeyOn(botonArriba)) {
 		direccionSiguiente = MOVE_DIRECTION_ARRIBA;
+		pilaMoveDirection.Insertar(MOVE_DIRECTION_ARRIBA);
 	}
 	else if (keyboardInput->IsKeyOn(botonDerecha)) {
 		direccionSiguiente = MOVE_DIRECTION_DERECHA;
+		pilaMoveDirection.Insertar(MOVE_DIRECTION_DERECHA);
 	}
 	else if (keyboardInput->IsKeyOn(botonIzquierda)) {
 		direccionSiguiente = MOVE_DIRECTION_IZQUIERDA;
+		pilaMoveDirection.Insertar(MOVE_DIRECTION_IZQUIERDA);
 	}
 
 
